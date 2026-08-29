@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background: #22c55e;
+    transition: width 0.3s;
+}
+
+#progressText {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-info strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.delete-btn {
+    background: #ef4444;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

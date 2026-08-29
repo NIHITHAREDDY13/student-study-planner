@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate - Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 StudyMate</h1>
+        <p>Your Personal Student Study Planner</p>
+    </header>
+
+    <main>
+
+        <!-- Add Task Section -->
+        <section class="card">
+            <h2>Add Study Task</h2>
+
+            <input type="text" id="taskInput" placeholder="Enter your study task">
+
+            <input type="date" id="dateInput">
+
+            <select id="subjectInput">
+                <option value="">Select Subject</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Programming">Programming</option>
+                <option value="Physics">Physics</option>
+                <option value="Digital Logic">Digital Logic</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="card">
+            <h2>📊 Study Progress</h2>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="progressText">0% Completed</p>
+        </section>
+
+        <!-- Tasks Section -->
+        <section class="card">
+            <h2>📝 My Study Tasks</h2>
+
+            <ul id="taskList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StudyMate | Student Study Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
